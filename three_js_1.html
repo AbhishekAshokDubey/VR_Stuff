@@ -46,7 +46,9 @@
       scene.add(light);
 
       var loader = new THREE.JSONLoader();
-      loader.load( "{% static 'gacborslb/js/ad_first.json' %}", function(geometry){
+      // http://www.jonathan-petitcolas.com/2015/07/27/importing-blender-modelized-mesh-in-threejs.html
+      // https://github.com/mrdoob/three.js/tree/master/utils/exporters/blender
+      loader.load( "ad_first.json", function(geometry){
         var material = new THREE.MeshLambertMaterial({color: 0x55B663});
         mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
@@ -54,8 +56,7 @@
 
       // Add OrbitControls for the mouse.
       //controls = new THREE.OrbitControls(camera, renderer.domElement);
-
-
+      
     }
 
     function animate() {
