@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/engine.css" type="text/css" media="all">
+</head>
+<body>
+    <div id="info"></div>
+    <div id="check_store" style="">Check Asset Store</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="js/engine4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
+    <script src="js/mychart.js"></script>
+    <!--    <script src="js/camera_movement.js"></script>
+      <link rel="stylesheet" href="css/mathbox.css">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    -->
+    <div id="statistics_container" style="background-color:#666677; display:None; height:100px!important;">
+        <br />
+        <div>
+            Health: Good<br />
+            Last Updated: 26/10/2016<br />
+            Cur. f = <span id="c_feature">46</span><br />
+            Avg. f = 54<br />
+            Max. f = 99<br />
+            <br />
+        </div>
+        <script>
+		setInterval(function(){$("#c_feature").text(Math.random()*100)}, 1000);
+        </script>
+    </div>
+    <div id="chartContainer" style="background:#666677; float:left" width="300" height="100">
+    </div>
+</body>
+</html>

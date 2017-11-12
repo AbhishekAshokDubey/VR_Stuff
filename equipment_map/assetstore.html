@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asset Store</title>
+    <meta charset="utf-8">
+    <!--<link rel='shortcut icon' type='image/x-icon' href='/static/chat_bot/favicon.ico' />-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+	#instructions{
+		position:absolute;
+		top:40%;
+		left:45%; 
+		cursor:pointer; 
+		background-color: #90ff90;
+		text-align:center;
+		min-width: 100px;
+		min-height: 30px;
+		line-height:30px;
+	}
+	canvas{
+		display:block;
+	}
+	body{
+		margin: 0px;
+	}
+	#all_info{
+		position:absolute;	
+		top:10px;
+		right:10px;
+	}
+	#user_cart{
+		background-color:rgba(200, 54, 54, 0.7);
+		width:160px;
+		min-height:80px;
+		padding: 20px;
+	}
+	#asset_info{
+		margin-top: 10px;
+		background-color:rgba(54, 200, 54, 0.7);
+		width:160px;
+		min-height:80px;
+		padding: 20px;
+	}
+    </style>
+</head>
+<body>
+	<div id="all_info">
+		<div id="user_cart"><b>User Cart</b><br/><br/> Empty</div>
+		<div id="asset_info"></div>
+	</div>
+
+	<div id="blocker">
+		<div id="instructions">ENTER</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/stats.min.js"></script>
+	<script src="js/stats.min.js"></script>
+	<script src="js/PointerLockControls.js"></script>
+    <script src="js/assetstore3.js"></script>
+
+ </body>
+</html>

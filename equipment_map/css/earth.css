@@ -1,0 +1,48 @@
+html, body {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.tm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.webgl-error {
+    font: 15px/30px monospace;
+    text-align: center;
+    color: #fff;
+    margin: 50px;
+}
+
+    .webgl-error a {
+        color: #fff;    
+     }
+
+		#good_rig_count,#bad_rig_count{
+			position:absolute;
+			top:10px;
+			height:80px;
+			width:80px;
+			font-size:50px;
+			text-align: center;
+			line-height:78px;
+		} 
+		#good_rig_count{
+			background-color:rgba(54, 200, 54, 0.7);
+			left:20px;
+		}
+		#bad_rig_count{
+			background-color:rgba(200, 54, 54, 0.7);
+			right:20px;
+		}
+
+

@@ -1,0 +1,51 @@
+body {
+    font-family: Monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    overflow: hidden;
+    background-image: url("https://storage.googleapis.com/abhitemp/vr_images/underwater.gif");
+    background-size: cover;
+    width: 100%;
+}
+
+#info {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display: block;
+}
+
+    #info a, .button {
+        color: #f00;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer
+    }
+
+#main_canvas_container {
+    float: left
+}
+
+.canvasjs-chart-canvas {
+    width: 395px !important;
+    height: 350px !important;
+}
+
+		#check_store{
+			padding: 0px 20px;
+			position: absolute;
+			left: 35px;top: 20px;
+			min-width:30px;
+			max-width: 200px;
+			height:30px;
+			background-color:#ff8080;
+			text-align:center;
+			line-height:30px;
+			cursor:pointer;
+			display:None;
+		}
+
